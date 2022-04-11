@@ -1,24 +1,24 @@
 # SolidGraph
 
-SolidGraph lets you build applications with SolidJs and [Wundergraph](https://wundergraph.com/).
+SolidGraph lets you build applications with SolidJs and [WunderGraph](https://wundergraph.com/).
 
 ## What is Wundergraph ?
 
-Wundergraph is the best Developer Experience to build Serverless APIs :
+WunderGraph is the best Developer Experience to build Serverless APIs :
 
 - Server-Side-Only Compile-Time GraphQL API Layer
 - Auto-Generated TypeSafe Clients
 - OpenID Connect-based Authentication with RBAC
 - S3 integration for File Uploads
 
-## Solidgraph compostion
+## SolidGraph compostion
 
-The Solidgraph library is composed of two files:
+The SolidGraph library is composed of two files:
 [hooks.ts](https://github.com/verdavaine/solidgraph/blob/master/src/lib/hooks.ts) and [provider.tsx](https://github.com/verdavaine/solidgraph/blob/master/src/lib/provider.tsx)
 
 ## License
 
-The Soligraph library is under [MIT](https://choosealicense.com/licenses/mit/) license.
+The SoliGraph library is under [MIT](https://choosealicense.com/licenses/mit/) license.
 
 # Realtime chat example
 
@@ -58,6 +58,6 @@ docker-compose rm -v -f
 
 # Questions ?
 
-Read the [SolidGraph Quickstart Guide](https://api.solidgraph.ovh/docs/)
+Read the [SolidGraph Docs](https://api.solidgraph.ovh/docs/)
 
-Read the [Wundergraph Docs](https://wundergraph.com/docs).
+Read the [WunderGraph Docs](https://wundergraph.com/docs).

@@ -1,8 +1,8 @@
 {
   "name": "solidgraph",
   "version": "1.0.0",
-  "description": "",
-  "info": "",
+  "description": "SolidGraph lets you build SolidJs applications with WunderGraph.",
+  "info": "WunderGraph was intially designed for React. Thanks to the SolidGraph library, you can now use WunderGraph when builing SolidJs applications. Apart from providing you with a GraphQL API from all your services (both GraphQL and REST!) and databases, it also comes with features like edge caching, authentication and Subscriptions.",
   "homepage": "https://solidgraph.ovh/",
   "contributors": [
     {
@@ -19,6 +19,7 @@
     "solidhack",
     "best_ecosystem"
   ],
+  "license": "MIT",
   "scripts": {
     "dev": "concurrently \"$npm_execpath run start\" \"$npm_execpath run wundergraph\" \"$npm_execpath run database\" \"$npm_execpath run browser\"",
     "start": "vite",
@@ -29,7 +30,6 @@
     "database": "docker-compose up",
     "migrate": "prisma format && prisma migrate dev --name init"
   },
-  "license": "MIT",
   "devDependencies": {
     "concurrently": "^7.0.0",
     "open-cli": "^7.0.1",

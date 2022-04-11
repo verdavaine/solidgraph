@@ -19,7 +19,7 @@ const LazyLoad: Component = () => {
         ],
       },
     },*/
-    refetchOnWindowFocus: true,
+    //refetchOnWindowFocus: true,
     lazy: true,
   });
   const loading = useLoadingComplete(messages.response);
@@ -29,7 +29,7 @@ const LazyLoad: Component = () => {
       <pre>{JSON.stringify(messages.response(), null, 2)}</pre>
       <Show
         when={loading()}
-        fallback={<button onClick={() => location.reload()}>lazyLoad</button>}
+        fallback={<button onClick={() => messages.refetch()}>lazyLoad</button>}
       >
         <div>
           <Spinner radius={40} color="#08F" stroke={5} />
