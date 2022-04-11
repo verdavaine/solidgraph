@@ -1,0 +1,20 @@
+datasource db {
+  provider = "mysql"
+  url      = "mysql://user:password@host:3306/database?schema=public"
+}
+
+model users {
+  id        Int        @id @default(autoincrement())
+  email     String     @unique
+  name      String
+  messages  messages[]
+  updatedat DateTime   @default(now())
+  lastlogin DateTime   @default(now())
+}
+
+model messages {
+  id      Int    @id @default(autoincrement())
+  user    users  @relation(fields: [user_id], references: [id])
+  message String
+  user_id Int
+}

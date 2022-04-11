@@ -1,0 +1,8 @@
+node_modules
+.wundergraph/generated
+.wundergraph/.env.mysql
+.wundergraph/.env.prod.secrets
+.wundergraph/.env.prod.localdb
+.env
+schema.prisma.secrets
+migrations

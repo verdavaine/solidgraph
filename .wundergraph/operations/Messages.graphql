@@ -1,0 +1,11 @@
+{
+  findManymessages: db_findManymessages(take: 20, orderBy: [{ id: desc }]) {
+    id
+    message
+    users {
+      id
+      name
+      email
+    }
+  }
+}
