@@ -1,0 +1,1 @@
+declare module 'solidjs-material-spinner';

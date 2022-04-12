@@ -7,7 +7,7 @@ import Countries from "./pages/lazyload";
 const Chat = lazy(() => import("./pages/index"));
 const UpdateUser = lazy(() => import("./pages/updateuser"));
 const AdminPage = lazy(() => import("./pages/admin/index"));
-const LazyLoad = lazy(() => import("./pages/lazyload"));
+const TestQuery = lazy(() => import("./pages/testquery"));
 const Mock = lazy(() => import("./pages/mock"));
 const NotFound = lazy(() => import("./pages/[...all]"));
 
@@ -42,10 +42,7 @@ const App: Component = () => {
             <Link href="/admin">Admin</Link>
           </li>
           <li>
-            <Link href="/lazyload">LazyLoad</Link>
-          </li>
-          <li>
-            <Link href="/mock">Mock</Link>
+            <Link href="/testquery">Test Query</Link>
           </li>
         </ul>
       </nav>
@@ -54,7 +51,7 @@ const App: Component = () => {
           <Route path="/" element={<Chat />} />
           <Route path="/updateuser" element={<UpdateUser />} />
           <Route path="/admin" element={<AdminPage />} />
-          <Route path="/lazyload" element={<LazyLoad />} />
+          <Route path="/testquery" element={<TestQuery />} />
           <Route path="/mock" element={<Mock />} />
           <Route path="/*all" element={<NotFound />} />
         </Routes>

@@ -59,6 +59,9 @@ export const Query = <R extends {}, I extends {}>(
 	};
 	createEffect(on(onWindowFocus,(onWindowFocus) => {
 		if (onWindowFocus && _options && _options.refetchOnWindowFocus === true){
+			if (_options && _options.lazy === true){
+				_options = {..._options, lazy: false};
+			}
 			setResponse({ status: "loading" });
 			setShouldFetch(true);
 		} 
@@ -108,6 +111,9 @@ export const Query = <R extends {}, I extends {}>(
 		onCleanup (() => abortController.abort());
 	});
 	createEffect(on([user,refetchMountedQueries],() => {
+		if (_options && _options.lazy === true){
+			_options = {..._options, lazy: false};
+		}
 		setShouldFetch(true);
 	}, { defer: true }));
 	return {

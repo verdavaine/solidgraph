@@ -19,7 +19,7 @@ type Messages = MessagesResponseData["findManymessages"];
 const Chat: Component = () => {
   const {
     user,
-    client: { login, logout, query },
+    client: { login, logout },
   } = useWunderGraph();
 
   const [message, setMessage] = createSignal<string>("");
