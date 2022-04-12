@@ -17,7 +17,6 @@ const LazyLoad: Component<QueryOptions> = ({
   initialstate,
   refetchOnWindowFocus,
 }) => {
-  console.log(lazy, initialstate, refetchOnWindowFocus);
   const { user } = useWunderGraph();
   const messages = useQuery.Messages(
     initialstate

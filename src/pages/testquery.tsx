@@ -11,10 +11,6 @@ const TestQuery: Component = () => {
   const [choice, setChoice] = createSignal(1);
   const [fetchOnFocus, setFectchOnFocus] = createSignal(3);
 
-  createEffect(() => {
-    console.log(choice(), fetchOnFocus());
-  });
-
   return (
     <>
       <p>Initial conditions:</p>
