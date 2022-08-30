@@ -22,7 +22,7 @@ The SoliGraph library is under [MIT](https://choosealicense.com/licenses/mit/) l
 
 # Realtime chat example
 
-This example available [online](https://solidgraph.ovh/) demonstrates how SolidGraph lets you easily build a SolidJs application with Realtime subscription.
+This example demonstrates how SolidGraph lets you easily build a SolidJs application with Realtime subscription.
 
 The code that might interest you the most can be found in [index.tsx](https://github.com/verdavaine/solidgraph/blob/master/src/pages/index.tsx)
 
@@ -57,7 +57,5 @@ docker-compose rm -v -f
 ```
 
 # Questions ?
-
-Read the [SolidGraph Docs](https://api.solidgraph.ovh/docs/)
 
 Read the [WunderGraph Docs](https://wundergraph.com/docs).
